@@ -1,4 +1,31 @@
-#### docker 命令
+# use ruby capistrano deploy docker container
+
+#### 部署步骤
+
+环境准备
+
+- docker
+- ruby
+- bundler
+
+前期准备
+
+- 构建镜像
+- 启动`docker`容器
+- 配置 ssh
+
+部署分支
+
+- main
+
+部署命令
+
+```bash
+bundle install
+cap production deploy
+```
+
+#### 常用命令
 
 ```bash
 # 构建镜像
@@ -23,4 +50,7 @@ service nginx restart
 
 # 生成ssh key
 ssh-keygen -t rsa -b 4096 -C "xxx.com"
+
+# ssh进入容器
+ssh -i ~/.ssh/id_rsa root@localhost -p 2222
 ```
