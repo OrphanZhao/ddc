@@ -17,7 +17,7 @@ function App() {
         </a>
       </div>
       <h1>Vite + React</h1>
-      <h3>the vite build react app is capistrano deploy in docker container</h3>
+      <h3>the react app is capistrano deploy in docker container</h3>
       <div className="card">
         <button onClick={() => setCount((count) => count + 1)}>
           count is {count}
